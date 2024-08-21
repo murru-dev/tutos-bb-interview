@@ -76,7 +76,7 @@ onMounted(() => {
       >
         <h1 class="text-xl font-bold">Datos de cliente</h1>
         <UFormGroup label="Name" name="name">
-          <UInput v-model="client.email" placeholder="Nombre de la marca" />
+          <UInput v-model="client.name" placeholder="Nombre de la marca" />
         </UFormGroup>
 
         <UFormGroup label="Email" name="email">
@@ -85,13 +85,16 @@ onMounted(() => {
 
         <UFormGroup label="Contacto" name="phone">
           <UInput
-            v-model="client.email"
+            v-model="client.phone"
             placeholder="Número de teléfono. Incluir código de país"
           />
         </UFormGroup>
 
         <UFormGroup label="Instagram" name="instagram">
-          <UInput v-model="client.email" placeholder="Perfil de instagram" />
+          <UInput
+            v-model="client.instagram"
+            placeholder="Perfil de instagram"
+          />
         </UFormGroup>
 
         <br />
